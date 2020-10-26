@@ -17,16 +17,80 @@
 </section>
   <br>
   <br>
-  <div class="container">
-    <div class="row" class="row justify-content-md-center">
-    <div class="col col-md-4">
-    </div> 
+ <div class="container">
+    
+  <div class="row" class="row justify-content-md-center">
+    <div class="col col-lg-4">
+    </div>
+    <div class="col-lg-2">
+    <label for="origUnit" class="col col-form-label">Input your temperature:</label>
+    </div>
+    <div class="col-lg-3">
+    <input type="number" class="form-control form-control-lg" id="origUnit" placeholder="Input temperature here">
+    </div>
+    <div class="col col-lg-3">
+    </div>
+  </div>
+
+ 
+    <div class="col-md-auto">
+      <fieldset class="form-group">
+        <div class="form-group row">
+          <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div>
+          <label for="tempType" class="col-lg-4 col-form-label-lg">Select the scale of temperature input:</label>
+        </div>
+        <div class="col-lg-4">
+        </div>
+        </div>  
+      </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="tempSelector" id="tempTypeF" value="Fahrenheit">
+              <label class="form-check-label" for="tempTypeF">
+                Fahrenheit
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="tempSelector" id="tempTypeC" value="Celsius" >
+              <label class="form-check-label" for="tempTypeC">
+                Celsius
+              </label>
+            </div>
+          </div>
+          <div class="col-lg-4">
+          </div>
+        </div>
+      </fieldset>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+        </div>
     
      
   <button class="col-md-4" type="button" id="convReq" class="btn btn-primary">Click here to convert!</button>
 <div class="col col-md-4">
 </div> 
-
+<br>
+<br>
+<div class="row">
+<div class="col-lg-4">
+</div>
+<div class="col">
+  <input type="text" id="tempResult" name="Conversion">
+  <br>
+</div>
+<div class="col-lg-4">
+</div>
+</div>
+</div>
 </div>
 <p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: right;"><span>Photo by <a href="https://unsplash.com/@sumekler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jarosław Kwoczała</a> on <a href="https://unsplash.com/s/photos/thermometer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
   <script src="temp-app.js"></script>

@@ -2,14 +2,40 @@
 /*
 let numInput
 let tempType
-let origUnit
-let convUnit
+let origUnit: is the number they input in temperature field
+tempTypeF: checked radio button for fahrenheit
+tempTypeC: for celsius
+convReq: id of button for convert
+
 */
 
 
 document.getElementById("convReq").addEventListener("click", convTemp);
+function convTemp (){
+    let f =document.getElementById("tempTypeF").checked;
+    let c =document.getElementById('tempTypeC').checked;
+    let t =document.getElementById("origUnit");
+    let convertedToC;
+    let convertedToF;
+
+    if (f) {
+        convertedToC = ((t*9/5)+32);
+        
+    }else (c) {
+        ((t*9/5)+32) ;
+    }
+    document.getElementById("tempResult").innerHTML;
+
+    }
+    //document.getElementById("txtresult").innerHTML = result;   
 
 
+
+
+
+
+
+/*
 function convTemp (){
 let origUnit = prompt("Input a number!");
 let tempType = prompt("What Unit? Enter f for Farenheit, c for Celsius");
